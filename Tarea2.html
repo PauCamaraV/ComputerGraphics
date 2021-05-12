@@ -1,0 +1,169 @@
+<html>
+ <head>
+  <script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        var ab = 247
+        var mx = 53
+        var ex = 75
+        var lx1 = 70
+        var lx2 = 83
+        var lx3 = 80
+        var lx4 = 67
+        var lx5 = 73
+
+        //CIELO
+        ctx.fillStyle = "rgb(196,225,242)";
+        ctx.fillRect (0,0, 700,300);
+
+        //CESPED
+        ctx.fillStyle = "rgb(0,200,0)";
+        ctx.fillRect (0,300, 700,50);
+
+        //CESPED
+        ctx.fillStyle = "rgb(200,150,255)";
+        ctx.fillRect (190,15, 290,50);
+
+        // Title
+        ctx.fillStyle = "rgb(255,255,255)";
+        ctx.font = "30px Helvetica";
+        ctx.fillText("Army Bomb Garden", 200, 50);
+
+        //ARMY BOMB 1
+         // Mango
+        ctx.fillStyle = "rgb(0,0,0)";
+        ctx.fillRect (mx,190, 45, 130);
+
+          // Esfera
+        ctx.beginPath();
+        ctx.arc(ex,170,50,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(255,255,255)";
+        ctx.fill();    
+
+        // Red light
+        ctx.fillStyle = "rgb(0,0,0)";
+        ctx.rotate((Math.PI / 250) * 52);
+        ctx.fillRect (155,32, 20,10);
+        ctx.fillStyle = "rgb(255,0,0)";
+        ctx.fillRect (163,28, 5,5);
+
+        // Return rotate to normal
+        ctx.rotate((Math.PI / 250) * -52);
+
+        //BTS logo
+        ctx.fillStyle = "rgb(255,255,255)";
+        ctx.beginPath();
+        ctx.moveTo(lx1, 300);
+        ctx.lineTo(lx2, 310);
+        ctx.lineTo(lx2, 290);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(lx3, 300);
+        ctx.lineTo(lx4, 310);
+        ctx.lineTo(lx4, 290);
+        ctx.fill();
+        ctx.fillStyle = "rgb(0,0,0)";
+        ctx.fillRect (lx5,290, 4, 20);
+
+        //ARMY BOMB 2
+        mx = mx + ab
+        ex = ex + ab
+        lx1 = lx1 + ab
+        lx2 = lx2 + ab
+        lx3 = lx3 + ab
+        lx4 = lx4 + ab
+        lx5 = lx5 + ab
+
+        // Mango
+        ctx.fillStyle = "rgb(0,0,0)";
+        ctx.fillRect (mx,190, 45, 130);
+
+          // Esfera
+        ctx.beginPath();
+        ctx.arc(ex,170,50,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(255,255,255)";
+        ctx.fill();    
+
+        // Red light
+        ctx.fillStyle = "rgb(0,0,0)";
+        ctx.rotate((Math.PI / 250) * 52);
+        ctx.fillRect (355, -118, 20,10);
+        ctx.fillStyle = "rgb(255,0,0)";
+        ctx.fillRect (363,-122, 5,5);
+
+        // Return rotate to normal
+        ctx.rotate((Math.PI / 250) * -52);
+
+        //BTS logo
+        ctx.fillStyle = "rgb(255,255,255)";
+        ctx.beginPath();
+        ctx.moveTo(lx1, 300);
+        ctx.lineTo(lx2, 310);
+        ctx.lineTo(lx2, 290);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(lx3, 300);
+        ctx.lineTo(lx4, 310);
+        ctx.lineTo(lx4, 290);
+        ctx.fill();
+        ctx.fillStyle = "rgb(0,0,0)";
+        ctx.fillRect (lx5,290, 4, 20);
+
+        
+        //ARMY BOMB 3
+        mx = mx + ab
+        ex = ex + ab
+        lx1 = lx1 + ab
+        lx2 = lx2 + ab
+        lx3 = lx3 + ab
+        lx4 = lx4 + ab
+        lx5 = lx5 + ab
+
+        // Mango
+        ctx.fillStyle = "rgb(0,0,0)";
+        ctx.fillRect (mx,190, 45, 130);
+
+          // Esfera
+        ctx.beginPath();
+        ctx.arc(ex,170,50,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(255,255,255)";
+        ctx.fill();    
+
+        // Red light
+        ctx.fillStyle = "rgb(0,0,0)";
+        ctx.rotate((Math.PI / 250) * 52);
+        ctx.fillRect (553, -267, 20,10);
+        ctx.fillStyle = "rgb(255,0,0)";
+        ctx.fillRect (561,-271, 5,5);
+
+        // Return rotate to normal
+        ctx.rotate((Math.PI / 250) * -52);
+
+        //BTS logo
+        ctx.fillStyle = "rgb(255,255,255)";
+        ctx.beginPath();
+        ctx.moveTo(lx1, 300);
+        ctx.lineTo(lx2, 310);
+        ctx.lineTo(lx2, 290);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(lx3, 300);
+        ctx.lineTo(lx4, 310);
+        ctx.lineTo(lx4, 290);
+        ctx.fill();
+        ctx.fillStyle = "rgb(0,0,0)";
+        ctx.fillRect (lx5,290, 4, 20);
+
+        
+        
+        
+      }
+    }
+  </script>
+ </head>
+ <body onload="draw();">
+   <canvas id="canvas" width="800" height="800"></canvas>
+ </body>
+</html>
